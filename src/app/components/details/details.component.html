@@ -1,0 +1,18 @@
+<div style="display: flex;column-gap: 1px; background-color: #f5f7fa;">
+    <app-sidebar></app-sidebar>
+    <div class="container text-center" style="margin-left: 5px; margin-right: 5px; max-width:100%; ">
+        <div class="row" >
+            <div class="col mt-4" > 
+                <div class="col p-3 shadow-sm" style="background-color: white;">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <label for="searchInput" class="col-form-label">Details:</label>
+                            <button (click)="getRestApi()">Check REST API</button>
+                        </div>
+                        <h2 *ngIf="message" [ngClass]="messageClass">{{ message }}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
